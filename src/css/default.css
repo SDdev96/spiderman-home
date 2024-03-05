@@ -1,0 +1,194 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  cursor: default;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: 100%; /*buona pratica settarla a 100%*/
+  color: black;
+}
+
+header,
+section,
+footer,
+header {
+  margin: 100px 60px;
+}
+
+section,
+footer {
+  margin-bottom: 0;
+}
+
+header {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+
+  background: linear-gradient(
+    0deg,
+    rgba(96, 25, 23, 1) 10%,
+    rgba(14, 44, 72, 1) 40%
+  );
+}
+
+footer > * {
+  padding-block: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+a,
+a img {
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+
+  cursor: pointer;
+
+  /* TRANSITION DI USCITA */
+  transition: color 0.5s ease-in-out;
+}
+
+header a:hover {
+  color: rgba(205, 55, 50, 1);
+  text-decoration: underline;
+
+  /* TRANSITION DI ENTRATA */
+  transition: color 0.5s ease-in-out;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 32px;
+  color: white;
+}
+
+h2 {
+  font-size: 28;
+}
+
+p {
+  font-size: 24px;
+}
+
+label,
+textarea {
+  display: block;
+}
+
+label {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+label span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #757575;
+}
+
+input,
+textarea {
+  display: block;
+  cursor: text;
+}
+
+button {
+  padding: 12px 24px; /*top/bottom left/right*/
+
+  border: none;
+  border-radius: 36px;
+
+  box-shadow: none;
+
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out;
+}
+
+button:hover {
+  box-shadow: 0 0 12px black;
+}
+
+.logo > img {
+  object-fit: cover;
+  object-position: center;
+}
+.logo span {
+  position: relative;
+  bottom: 10px;
+
+  font-size: 20px;
+  color: white;
+}
+
+.social ul {
+  text-align: center;
+}
+.social ul > li {
+  display: inline-block;
+
+  padding-inline: 10px; /*dx e sx*/
+}
+
+.social ul li a img {
+  object-fit: contain;
+  object-position: center;
+
+  filter: grayscale(100%);
+
+  transition: filter 500ms ease-in-out;
+}
+.social ul > li > a > img:hover {
+  filter: grayscale(0%);
+}
+
+.copyright {
+  display: inherit; /*flex*/
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright p {
+  font-size: 10px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/default.css" />
+    <link rel="stylesheet" href="../css/logReg.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+
+    <title>Login</title>
+
+    <script src="../js/logReg.js" defer></script>
+  </head>
+  <body>
+    <div class="container"></div>
+    <header>
+      <div class="logo">
+        <img src="../media/img/logo/unisa_icons/favicon-32x32.png" alt="img1" />
+        <span class="material-symbols-outlined">close</span>
+        <img
+          src="../media/img/logo/spiderman_icons/favicon-32x32.png"
+          alt="img2"
+        />
+      </div>
+    </header>
+
+    <section class="form">
+      <h2>accedi</h2>
+      <form action="../php/firstPage.php" method="post" autocomplete="off">
+        <div>
+          <input
+            type="email"
+            id="email"
+            placeholder=""
+            title="email"
+            name="email"
+            required
+          />
+          <span class="material-symbols-outlined">email</span>
+        </div>
+
+        <div>
+          <input
+            type="password"
+            id="password"
+            title="password"
+            placeholder=""
+            name="pass"
+            required
+          />
+          <span class="material-symbols-outlined">lock</span>
+          <button type="button" class="button-visibility">
+            <span class="material-symbols-outlined">visibility_off</span>
+          </button>
+        </div>
+
+        <input type="submit" value="Accedi" />
+      </form>
+      <p>
+        Non hai ancora un account?
+        <em><a href="../php/register.php">Registrati</a></em>
+      </p>
+    </section>
+  </body>
+</html>

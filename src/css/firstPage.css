@@ -1,0 +1,242 @@
+body {
+  background-image: linear-gradient(
+    130deg,
+    rgba(14, 44, 72, 1) 55%,
+    rgba(96, 25, 23, 1) 50%
+  );
+  color: #020a0d;
+}
+
+header {
+  margin: 0;
+  margin-top: 20px;
+  margin-inline: 60px;
+}
+
+.logreg{
+  text-align: right;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero video {
+  width: 100%;
+
+  border-radius: 15px;
+}
+
+.hero > h1 {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+}
+
+.gallery {
+  display: grid;
+
+  grid-template:
+    "a a a a d f"
+    "b b c c d f"
+    "b b e e e f"
+    "h g g g g g"
+    "h i i j j j";
+  gap: 10px 10px;
+
+  padding: 50px 50px;
+
+  background-color: rgba(255, 255, 255, 0.5);
+
+  border-radius: 15px;
+}
+
+.gallery > img {
+  padding: 80px 0px;
+
+  font-size: 20px;
+  text-align: center;
+
+  background-color: rgba(0, 0, 0, 0.774);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  box-shadow: 0px 0px 200px 10px rgba(0, 0, 0, 0.7) inset,
+    0 0 0 0 rgba(0, 0, 0, 0.6);
+
+  border-radius: 10px;
+
+  /* transizione di uscita */
+  transition-property: box-shadow;
+  transition-delay: 0.5s;
+  transition-duration: 0.7s;
+  transition-timing-function: ease;
+}
+
+.gallery > img:hover {
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.6) inset,
+    15px 15px 50px 10px rgba(0, 0, 0, 0.6);
+
+  /* transizione di entrata */
+  transition-delay: 0s;
+}
+
+.gallery-item1 {
+  grid-area: a;
+  background-image: url("../media/img/spiderman_img/gallery/spidermanPS5.jpg");
+}
+
+.gallery-item2 {
+  grid-area: b;
+  background-image: url("../media/img/spiderman_img/gallery/spiderman_film1.jpg");
+}
+
+.gallery-item3 {
+  grid-area: c;
+  background-image: url("../media/img/spiderman_img/gallery/spiderman2PS5.jpg");
+}
+
+.gallery-item4 {
+  grid-area: d;
+  background-image: url("../media/img/spiderman_img/gallery/funkopop_milesmorales.jpg");
+}
+
+.gallery-item5 {
+  grid-area: e;
+  background-image: url("../media/img/spiderman_img/gallery/spiderman_film2.jpg");
+}
+.gallery-item6 {
+  grid-area: f;
+  background-image: url("../media/img/spiderman_img/gallery/spiderman_fumetto1.jpg");
+}
+
+.gallery-item7 {
+  grid-area: g;
+  background-image: url("../media/img/spiderman_img/gallery/ps5xSpiderman2.jpg");
+}
+
+.gallery-item8 {
+  grid-area: h;
+  background-image: url("../media/img/spiderman_img/gallery/funkopop_spiderman.jpg");
+}
+
+.gallery-item9 {
+  grid-area: i;
+  background-image: url("../media/img/spiderman_img/gallery/spiderman_milesmoralePS5.jpg");
+}
+
+.gallery-item10 {
+  grid-area: j;
+  background-image: url("../media/img/spiderman_img/gallery/spiderman_fumetto2.jpg");
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts-about,
+.contacts-form {
+  width: 40%;
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+
+.emails a {
+  font-weight: 100;
+}
+
+.contacts-about a:hover {
+  color: hwb(209 10% 50%);
+  text-decoration: underline;
+
+  transition: color 0.5s ease-in-out;
+}
+
+.input-field,
+.input-textarea {
+  margin-bottom: 10px;
+  padding: 8px 10px;
+
+  width: 100%;
+
+  font-size: 18px;
+
+  background-color: rgba(14, 44, 72, 1);
+
+  border: none;
+  border-radius: 15px;
+}
+
+.input-textarea {
+  height: 100px;
+}
+
+.button {
+  padding: 12px 24px; /*top/bottom left/right*/
+  border: none;
+  border-radius: 15px;
+
+  box-shadow: none;
+
+  background-color: rgba(14, 44, 72, 1);
+
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out;
+}
+
+.button:hover {
+  background-color: white;
+
+  color: rgba(14, 44, 72, 1);
+
+  box-shadow: 0 0 20px 5px rgba(14, 44, 72, 1);
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+
+  visibility: hidden;
+
+  width: 50px;
+  height: 50px;
+
+  opacity: 0;
+  border-radius: 50%;
+
+  box-shadow: none;
+
+  background-color: rgba(14, 44, 72, 1);
+  background-image: url("../media/img/others/arrow-up.png");
+  background-size: contain;
+
+  z-index: 1;
+  cursor: pointer;
+
+  transition: box-shadow 0.5s ease-in-out, background-color 0.5s ease-in-out,
+    opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+.back-to-top:hover {
+  box-shadow: 0 0 20px 5px rgba(14, 44, 72, 1);
+
+  background-color: white;
+}
+
+.back-to-top.visible {
+  visibility: visible;
+  opacity: 1;
+}
